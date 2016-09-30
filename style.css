@@ -1,0 +1,41 @@
+body {
+    font-family: "Playfair Display", Georgia, sans-serif;
+    font-style: italic;
+}
+
+a {
+	color: black;
+}
+
+.grid__cell {
+    height:50vh;
+}
+
+@media screen and (min-width: 30em) {
+    .grid__cell {
+        height: 33vh;
+    }
+}
+
+
+@keyframes blink {  
+    0% { color: white; }
+    100% { color: black; }
+      0% { background-color: black; }
+    100% { background-color: white; }
+}
+@-webkit-keyframes blink {
+    0% { color: white; }
+    100% { color: black; }
+      0% { background-color: black; }
+    100% { background-color: white; }
+}
+/**
+.blink {
+    -webkit-animation: blink 0.3s linear infinite;
+    -moz-animation: blink 0.3s linear infinite;
+    -ms-animation: blink 0.3s linear infinite;
+    -o-animation: blink 0.3s linear infinite;
+    animation: blink 0.3s linear infinite;
+} 
+**/
